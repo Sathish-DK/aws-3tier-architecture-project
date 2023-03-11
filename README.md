@@ -1,13 +1,13 @@
 # Deploying WordPress in a Three-Tier Architecture on AWS
  #### Implementation and Best Practices for a Highly Available and Secure Environment.
 ---
-___
 ## Introduction 
 
 This project deploys a WordPress site on AWS using a three-tier architecture approach. The solution leverages AWS services such as EC2, RDS, and ELB, and includes a custom VPC created from scratch. This documentation provides an overview of the architecture and implementation steps for a highly available and secure WordPress deployment on AWS.
-<!--Horizontal Rule-->
----
+
 ## Architecture Overview
+![Markdown Logo](https://github.com/Sathish-DK/aws-cloudpress-3tier-architecture-project/blob/main/architectures_and_Scrnshots/My_architecture_overview.png)
+
 
 * Custom VPC design and implementation with 6 subnets across two Availability Zones.
 * VPC resources created including subnets, route tables, Internet Gateway, and NAT Gateway.
