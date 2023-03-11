@@ -56,5 +56,12 @@ Each route table was associated with its respective subnets, with a screenshot b
 
 ![Markdown Logo](https://github.com/Sathish-DK/aws-cloudpress-3tier-architecture-project/blob/main/architectures_and_Scrnshots/vpc/route-nat-private-routtable-app.png)
 
+### 4. Security Groups
+In order to control inbound traffic to the instances, I configured four security groups:
+
+1. ALB security group: This security group allows HTTP/S traffic from anywhere.
+1. Web tier instance security group: This security group allows SSH traffic from anywhere.
+1. App tier instance security group: This security group allows SSH traffic only from the security group of the web tier instance and HTTP traffic only from the ALB security group.
+1. Database instance security group: This security group only allows traffic from the app tier security group.
 
 
